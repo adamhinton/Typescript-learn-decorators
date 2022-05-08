@@ -2,9 +2,14 @@
 
 // Decorators are just a fxn in the end, which you apply to something (like a class) in a certain way.
 //They start with capital character by convention.
+//You call it by adding an @ symbol in front of the class in question.
 
-function Logger();
+function Logger(constructor: Function) {
+  console.log("Logging...");
+  console.log("constructor:", constructor);
+}
 
+@Logger
 class Person {
   name = "max";
 
