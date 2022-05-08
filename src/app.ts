@@ -4,12 +4,14 @@
 //They start with capital character by convention.
 //You call it by adding an @ symbol in front of the class in question.
 
-function Logger(constructor: Function) {
-  console.log("Logging...");
-  console.log("constructor:", constructor);
+function Logger(logString: string {
+  return function (constructor: Function) {
+    console.log("logging");
+    console.log("constructor:", constructor);
+  };
 }
 
-@Logger
+@Logger('LOGGING - PERSON')
 class Person {
   name = "max";
 
