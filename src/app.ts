@@ -1,7 +1,7 @@
 // decorators in general are all about classes
 
 class Person {
-  name: "max";
+  name = "max";
 
   constructor() {
     console.log("Creating person object");
@@ -9,4 +9,4 @@ class Person {
 }
 
 const per = new Person();
-console.log('Per:', per)p
+console.log("Per:", per);
